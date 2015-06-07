@@ -11,6 +11,13 @@ You can install it with pip:
 
     pip install beautifulsoup4
 
+Of course, you need to use the materialize framework and make sure the materialboxed plugin is loaded:
+```javascript
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+});
+```
+
 ##How to use
 
 Simply add `materialbox` to your pelican plugins.
