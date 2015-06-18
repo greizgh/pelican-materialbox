@@ -17,7 +17,7 @@ def materialbox(instance):
             img = figure.find('img')
             img['data-caption'] = caption
             if 'class' not in img.attrs:
-                img['class'] = "materialboxed"
+                img['class'] = "materialboxed responsive-img"
             else:
                 img['class'].append("materialboxed")
         instance._content = soup.decode()
