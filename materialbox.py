@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 def materialbox(instance):
     if instance._content is not None:
         content = instance._content
-        soup = BeautifulSoup(content)
+        soup = BeautifulSoup(content, 'html.parser')
         for figure in soup.find_all("div", class_="figure"):
             caption = figure.find('p', class_="caption").string
             img = figure.find('img')
